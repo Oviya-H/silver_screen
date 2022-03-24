@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Movie_details">
+
+    <RelativeLayout
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/video_player"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:videoId="aWzlQ2N6qqg"
+            app:autoPlay="true"
+            />
+
+
+        <ImageView
+            android:id="@+id/detailed_img"
+            android:layout_below="@id/video_player"
+            android:layout_margin="20sp"
+            android:layout_width="120dp"
+            android:layout_height="175dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/movie2" />
+
+        <TextView
+            android:id="@+id/detailed_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/detailed_img"
+            android:layout_marginTop="270dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Resident evil"
+            />
+
+        <TextView
+            android:id="@+id/detailed_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detailed_img"
+            android:layout_margin="10dp"
+            android:textStyle="italic"
+            android:textSize="15sp"
+            android:lineSpacingExtra="8dp"
+            android:text="Resident Evil is a science fiction action-horror film series based on the Japanese video game franchise of the same name by Capcom. German studio Constantin Film bought the rights to adapt the series in January 1998."
+            />
+
+        <TextView
+            android:id="@+id/detailed_cast_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detailed_description"
+            android:text="Cast"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@id/detailed_cast_tv"
+            android:layout_margin="10dp"
+            android:id="@+id/detailed_cast_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/detailed_booking_btn"
+            android:layout_below="@id/detailed_cast_list"
+            android:textAlignment="center"
+            android:text="Book Ticket"
+            />
+
+    </RelativeLayout>
+
+
+</androidx.core.widget.NestedScrollView>

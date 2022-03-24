@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".Fragment_bottom">
+
+   <Button
+       android:layout_width="50dp"
+       android:layout_height="50dp"
+       android:id="@+id/fragment_home"
+       android:background="@drawable/home"
+       android:textColor="@color/blue"
+       android:layout_marginLeft="90dp"
+       android:layout_marginRight="20dp"
+       android:layout_marginTop="5dp"
+       android:layout_marginBottom="10dp"
+       android:layout_centerVertical="true"/>
+
+   <Button
+       android:layout_width="50dp"
+       android:layout_height="50dp"
+       android:id="@+id/fragment_profile"
+       android:background="@drawable/profile"
+       android:layout_marginLeft="60dp"
+       android:layout_marginRight="20dp"
+       android:layout_marginTop="5dp"
+       android:layout_marginBottom="10dp"
+       android:textColor="@color/blue"
+       android:padding="10dp"
+       android:layout_centerVertical="true"
+       android:layout_toRightOf="@id/fragment_home"/>
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User_edit_page">
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/userEdit_name"
+        android:layout_margin="20dp"
+        android:background="@drawable/editview_design"
+        android:padding="10dp"
+        android:hint="Name"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/userEdit_phone"
+        android:layout_margin="20dp"
+        android:background="@drawable/editview_design"
+        android:padding="10dp"
+        android:layout_below="@id/userEdit_name"
+        android:hint="Phone no."/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/userEdit_email"
+        android:layout_margin="20dp"
+        android:background="@drawable/editview_design"
+        android:padding="10dp"
+        android:layout_below="@id/userEdit_phone"
+        android:hint="E-mail"/>
+
+    <AutoCompleteTextView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/userEdit_city"
+        android:layout_margin="20dp"
+        android:background="@drawable/editview_design"
+        android:padding="10dp"
+        android:layout_below="@id/userEdit_email"
+        android:hint="City"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userEdit_save"
+        android:textColor="@color/white"
+        android:text="Save"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_design"
+        android:layout_centerHorizontal="true"
+        android:drawableRight="@drawable/save"
+        android:layout_below="@id/userEdit_city"
+        android:padding="10dp"/>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:name="com.example.silver_screen.Fragment_bottom"
+        android:id="@+id/user_edit_fragment"/>
+
+</RelativeLayout>

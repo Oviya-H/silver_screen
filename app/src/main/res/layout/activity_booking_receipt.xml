@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".booking_receipt">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="560dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@color/t_blue">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/booking_receipt_iv"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/movie2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/booking_receipt_movie"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_below="@id/booking_receipt_iv"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/booking_receipt_date"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:textSize="15sp"
+            android:layout_below="@id/booking_receipt_movie"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/booking_ticket_time"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:textSize="15sp"
+            android:layout_below="@id/booking_receipt_movie"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/booking_receipt_theatre"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="20sp"
+            android:layout_below="@id/booking_receipt_date"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/booking_receipt_no_of_tickets"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_below="@id/booking_receipt_theatre"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/booking_receipt_type_seats"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:layout_below="@id/booking_receipt_no_of_tickets"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/booking_receipt_tv1"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="Booking ID"
+            android:layout_below="@id/booking_receipt_type_seats"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/booking_receipt_id"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="12sp"
+            android:layout_below="@id/booking_receipt_tv1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/booking_receipt_tv2"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="Total Amount : "
+            android:layout_below="@id/booking_receipt_id"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/booking_receipt_amount"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_below="@id/booking_receipt_id"/>
+
+    </RelativeLayout>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_fragment"
+        android:name="com.example.silver_screen.Fragment_bottom"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

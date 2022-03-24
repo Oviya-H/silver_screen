@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Booking_ticket">
+
+    <AutoCompleteTextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/booking_theater_ed"
+        android:hint="Select Theater "
+        android:layout_margin="20dp"
+        android:background="@drawable/editview_design"
+        android:padding="10dp"
+        android:textColor="@color/blue"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/booking_show"
+        android:text="Show details"
+        android:layout_below="@id/booking_theater_ed"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_design"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        />
+
+    <AutoCompleteTextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/booking_type_ed"
+        android:hint="Select Ticket Type "
+        android:layout_margin="20dp"
+        android:background="@drawable/editview_design"
+        android:padding="10dp"
+        android:layout_below="@id/booking_show"
+        android:textColor="@color/blue"/>
+
+
+    <AutoCompleteTextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/booking_ticket_ed"
+        android:hint="Select No. of Ticket"
+        android:layout_margin="20dp"
+        android:background="@drawable/editview_design"
+        android:padding="10dp"
+        android:layout_below="@id/booking_type_ed"
+        android:textColor="@color/blue"/>
+
+    <AutoCompleteTextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/booking_time_ed"
+        android:hint="Select Timing "
+        android:layout_margin="20dp"
+        android:background="@drawable/editview_design"
+        android:padding="10dp"
+        android:layout_below="@id/booking_ticket_ed"
+        android:textColor="@color/blue"/>
+
+
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/booking_submit"
+        android:text="submit"
+        android:layout_below="@id/booking_time_ed"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_design"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

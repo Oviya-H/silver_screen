@@ -1,0 +1,2 @@
+rootProject.name = "Silver_Screen"
+include ':app'

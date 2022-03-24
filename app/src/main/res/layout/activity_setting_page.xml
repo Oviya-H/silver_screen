@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setting_page">
+
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/setting_notification_swithch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="off"
+        android:textOn="on"
+        android:thumb="@drawable/switch_thumb"
+        app:showText="true"
+        app:track="@drawable/switch_track"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="50dp"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/setting_darkmode_swithch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="off"
+        android:textOn="on"
+        android:thumb="@drawable/switch_thumb"
+        app:showText="true"
+        app:track="@drawable/switch_track"
+        android:layout_below="@id/setting_notification_swithch"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="50dp"/>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:name="com.example.silver_screen.Fragment_bottom"
+        android:id="@+id/setting_fragment"/>
+
+</RelativeLayout>
