@@ -9,14 +9,29 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        >
+        android:background="@color/grey">
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/home_search"
+            android:background="@drawable/editview_design"
+            android:layout_margin="20dp"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:hint="search..."
+            android:drawableLeft="@drawable/search"/>
+
 
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/home_slider_page"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="200dp"
-
-            />
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/home_fragment"/>
 
         <TextView
             android:id="@+id/home_latest_tv"
@@ -24,9 +39,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/home_slider_page"
             android:text="Latest Hits "
+            android:textColor="@color/black"
             android:textStyle="bold"
-            android:textSize="20sp"
-            />
+            android:textSize="20sp" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_below="@id/home_latest_tv"
@@ -42,6 +57,7 @@
             android:text="Picks for You"
             android:textSize="20sp"
             android:textStyle="bold"
+            android:textColor="@color/black"
             android:layout_below="@id/home_Latest_list"
             />
 
@@ -58,6 +74,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Near By theaters"
+            android:textColor="@color/black"
             android:layout_below="@id/home_picks_list"
             android:textStyle="bold"
             android:textSize="20sp"
@@ -75,7 +92,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/home_fragment"
             android:name="com.example.silver_screen.Fragment_bottom"
-            android:layout_alignParentBottom="true" />
+            android:layout_alignParentBottom="true"/>
 
 
     </RelativeLayout>

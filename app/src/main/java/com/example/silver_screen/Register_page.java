@@ -2,6 +2,7 @@ package com.example.silver_screen;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
@@ -11,6 +12,16 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.StringReader;
 
 public class Register_page extends AppCompatActivity {
 
@@ -39,6 +50,8 @@ public class Register_page extends AppCompatActivity {
         reg_password = findViewById(R.id.register_password);
         reg_re_password = findViewById(R.id.re_register_password);
         DB = new DBlink(this);
+
+
 
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_selectable_list_item, cities);

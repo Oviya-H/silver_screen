@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class profile_page extends AppCompatActivity {
 
-    Button pro_setting, pro_history, pro_account, pro_payment, pro_user;
+    Button pro_setting, pro_history, pro_payment, pro_user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +18,6 @@ public class profile_page extends AppCompatActivity {
 
         pro_setting = findViewById(R.id.profile_settings);
         pro_history = findViewById(R.id.profile_history);
-        pro_account = findViewById(R.id.profile_accounts);
         pro_payment = findViewById(R.id.profile_payments);
         pro_user = findViewById(R.id.profile_user);
 
@@ -38,13 +37,7 @@ public class profile_page extends AppCompatActivity {
             }
         });
 
-        pro_account.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent account = new Intent(getApplicationContext(), Account_page.class);
-                startActivity(account);
-            }
-        });
+
 
         pro_payment.setOnClickListener(new View.OnClickListener() {
             @Override

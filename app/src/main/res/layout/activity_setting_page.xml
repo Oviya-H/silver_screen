@@ -18,7 +18,18 @@
         app:track="@drawable/switch_track"
         android:layout_alignParentRight="true"
         android:layout_marginTop="50dp"
-        android:layout_marginRight="50dp"/>
+        android:layout_marginRight="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/setting_tv1"
+        android:text="Notification"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"/>
 
     <androidx.appcompat.widget.SwitchCompat
         android:id="@+id/setting_darkmode_swithch"
@@ -32,7 +43,57 @@
         android:layout_below="@id/setting_notification_swithch"
         android:layout_alignParentRight="true"
         android:layout_marginTop="50dp"
-        android:layout_marginRight="50dp"/>
+        android:layout_marginRight="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/setting_tv2"
+        android:text="Location Permission"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/setting_tv1"/>
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/setting_location_bt"
+        android:layout_below="@id/setting_darkmode_swithch"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/add_location" />
+
+    <EditText
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/setting_location_et"
+        android:textSize="20sp"
+        android:background="@drawable/editview_design"
+        android:padding="10dp"
+        android:hint="Click location Button"
+        android:textColor="@color/black"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/setting_tv2"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/setting_location_swithch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="off"
+        android:textOn="on"
+        android:thumb="@drawable/switch_thumb"
+        app:showText="true"
+        app:track="@drawable/switch_track"
+        android:layout_below="@id/setting_location_bt"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="40dp"/>
 
     <fragment
         android:layout_width="match_parent"
@@ -40,5 +101,17 @@
         android:layout_alignParentBottom="true"
         android:name="com.example.silver_screen.Fragment_bottom"
         android:id="@+id/setting_fragment"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/setting_tv3"
+        android:text="Location Permission"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/setting_location_et"/>
 
 </RelativeLayout>

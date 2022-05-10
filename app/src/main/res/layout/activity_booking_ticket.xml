@@ -24,7 +24,7 @@
         android:layout_below="@id/booking_theater_ed"
         android:layout_margin="10dp"
         android:background="@drawable/button_design"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:layout_centerHorizontal="true"
         />
 
@@ -73,7 +73,7 @@
         android:layout_below="@id/booking_time_ed"
         android:layout_margin="10dp"
         android:background="@drawable/button_design"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:layout_centerHorizontal="true"
         />
 

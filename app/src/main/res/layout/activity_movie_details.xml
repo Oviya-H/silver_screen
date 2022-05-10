@@ -17,8 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:videoId="aWzlQ2N6qqg"
-            app:autoPlay="true"
-            />
+            app:autoPlay="true" />
 
 
         <ImageView
@@ -39,8 +38,7 @@
             android:layout_marginLeft="10dp"
             android:textStyle="bold"
             android:textSize="20sp"
-            android:text="Resident evil"
-            />
+            android:text="Resident evil" />
 
         <TextView
             android:id="@+id/detailed_description"
@@ -61,8 +59,7 @@
             android:layout_below="@id/detailed_description"
             android:text="Cast"
             android:textStyle="bold"
-            android:textSize="20sp"
-            />
+            android:textSize="20sp" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_below="@id/detailed_cast_tv"
@@ -72,13 +69,14 @@
             android:layout_height="wrap_content" />
 
         <Button
-            android:layout_width="match_parent"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:id="@+id/detailed_booking_btn"
             android:layout_below="@id/detailed_cast_list"
             android:textAlignment="center"
             android:text="Book Ticket"
-            />
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_design" />
 
     </RelativeLayout>
 

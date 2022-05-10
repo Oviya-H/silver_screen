@@ -35,7 +35,7 @@
         android:layout_toRightOf="@id/register_phone"
         android:layout_below="@id/register_name"
         android:text="Verify"
-        android:textColor="@color/blue"
+        android:textColor="@color/black"
         android:background="@color/transparent"/>
 
     <EditText
@@ -96,7 +96,6 @@
         android:text="Register"
         android:padding="10dp"
         android:background="@drawable/button_design"
-        android:textColor="@color/white"
         android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>

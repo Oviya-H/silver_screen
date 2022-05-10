@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".profile_page"
-    android:background="@color/t_blue">
+    android:background="@color/grey">
 
 
 
     <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="150dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:columnCount="2"
@@ -40,19 +40,23 @@
                 android:gravity="center"
                 android:layout_gravity="center_vertical|center_horizontal">
 
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:background="@drawable/settings"
-                    android:layout_margin="5dp"/>
+
               <Button
-                  android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
+                  android:layout_width="100dp"
+                  android:layout_height="100dp"
                   android:id="@+id/profile_settings"
-                  android:text="settings"
                   android:textColor="@color/white"
-                  android:background="@drawable/button_design"
-                  android:layout_margin="5dp"/>
+                  android:background="@drawable/settings" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profile_tv1"
+                    android:text="Settings"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:layout_margin="10dp"
+                    android:textStyle="bold"/>
 
 
             </LinearLayout>
@@ -79,19 +83,22 @@
                 android:gravity="center"
                 android:layout_gravity="center_vertical|center_horizontal">
 
-                <ImageView
+                <Button
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:background="@drawable/history"
-                    android:layout_margin="5dp"/>
-                <Button
+                    android:id="@+id/profile_history"
+                    android:textColor="@color/white"
+                    android:background="@drawable/history" />
+
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/profile_history"
-                    android:text="history"
-                    android:textColor="@color/white"
-                    android:background="@drawable/button_design"
-                    android:layout_margin="5dp"/>
+                    android:id="@+id/profile_tv2"
+                    android:text="History"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
 
 
             </LinearLayout>
@@ -117,19 +124,24 @@
                 android:gravity="center"
                 android:layout_gravity="center_vertical|center_horizontal">
 
-                <ImageView
+
+                <Button
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:background="@drawable/account"
+                    android:id="@+id/profile_user"
+                    android:textColor="@color/white"
+                    android:background="@drawable/user"
                     android:layout_margin="5dp"/>
-                <Button
+
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/profile_accounts"
-                    android:text="Accounts"
-                    android:textColor="@color/white"
-                    android:background="@drawable/button_design"
-                    android:layout_margin="5dp"/>
+                    android:id="@+id/profile_tv5"
+                    android:text="User"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:layout_margin="10dp"
+                    android:textStyle="bold"/>
 
 
             </LinearLayout>
@@ -154,19 +166,23 @@
                 android:gravity="center"
                 android:layout_gravity="center_vertical|center_horizontal">
 
-                <ImageView
+
+                <Button
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:background="@drawable/ic_baseline_payments_24"
-                    android:layout_margin="5dp"/>
-                <Button
+                    android:id="@+id/profile_payments"
+                    android:textColor="@color/white"
+                    android:background="@drawable/ic_baseline_payments_24" />
+
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/profile_payments"
+                    android:id="@+id/profile_tv4"
                     android:text="Payments"
-                    android:textColor="@color/white"
-                    android:background="@drawable/button_design"
-                    android:layout_margin="5dp"/>
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:layout_margin="10dp"
+                    android:textStyle="bold"/>
 
 
             </LinearLayout>
@@ -178,59 +194,7 @@
 
     </GridLayout>
 
-    <GridLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginRight="10dp"
-        android:columnCount="1"
-        android:rowCount="1"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/profile_bottomgrid"
-        android:layout_below="@id/profile_topgrid">
 
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/cv5"
-        android:layout_row="0"
-        android:layout_column="0"
-        android:background="@color/white"
-        android:layout_gravity="fill"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="8dp"
-        app:cardUseCompatPadding="true">
-
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_gravity="center_vertical|center_horizontal">
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:background="@drawable/user"
-                android:layout_margin="5dp"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/profile_user"
-                android:text="User"
-                android:textColor="@color/white"
-                android:background="@drawable/button_design"
-                android:layout_margin="5dp"/>
-
-
-        </LinearLayout>
-
-
-    </androidx.cardview.widget.CardView>
-    </GridLayout>
 
     <fragment
         android:layout_width="match_parent"

@@ -120,7 +120,7 @@ public class Booking_ticket extends AppCompatActivity {
                 }
                 else {
                     int amount;
-                    if (Type.equals("Budget")){
+                    if (Type.equals("Budget - Rs.150")){
                         amount = Integer.parseInt(Ticket)*150;
                     }else {
                         amount = Integer.parseInt(Ticket)* 210;
@@ -150,7 +150,7 @@ public class Booking_ticket extends AppCompatActivity {
                             }
 
                         }
-                    }).setNegativeButton("Cancell", new DialogInterface.OnClickListener() {
+                    }).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
                             Toast.makeText(getApplicationContext(),"Booking Cancelled !!", Toast.LENGTH_SHORT).show();
