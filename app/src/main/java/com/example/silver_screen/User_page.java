@@ -15,7 +15,7 @@ public class User_page extends AppCompatActivity {
 
     Button user_edit;
     TextView tv;
-    DBlink DB;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,17 +24,13 @@ public class User_page extends AppCompatActivity {
 
         user_edit = findViewById(R.id.user_edit);
         tv = findViewById(R.id.user_text);
-        DB = new DBlink(this);
-
-        Cursor c = DB.get_details();
-        c.moveToFirst();
 
 
         SharedPreferences sf=getSharedPreferences("Account Details", Context.MODE_PRIVATE);
-        String name_sp = sf.getString("Name", c.getString(3));
-        String email_sp = sf.getString("Email", c.getString(1));
-        String phone_sp = sf.getString("Phone", c.getString(0));
-        String city_sp = sf.getString("City", c.getString(4));
+        String name_sp = sf.getString("Name", "user");
+        String email_sp = sf.getString("Email", "user@gmail.com");
+        String phone_sp = sf.getString("Phone", "1234567890");
+        String city_sp = sf.getString("City", "usercity");
 
         String out = "Name :" +name_sp+ "\n" + "Email  :"+ email_sp + "\n" + "Phone No :" + phone_sp + "\n" + "City  :" + city_sp;
         tv.setText(out);

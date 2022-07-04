@@ -51,12 +51,21 @@
             android:lineSpacingExtra="8dp"
             android:text="Resident Evil is a science fiction action-horror film series based on the Japanese video game franchise of the same name by Capcom. German studio Constantin Film bought the rights to adapt the series in January 1998."
             />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/detailed_rating"
+            android:layout_below="@id/detailed_description"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
 
         <TextView
             android:id="@+id/detailed_cast_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/detailed_description"
+            android:layout_below="@id/detailed_rating"
             android:text="Cast"
             android:textStyle="bold"
             android:textSize="20sp" />

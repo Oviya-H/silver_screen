@@ -5,9 +5,9 @@ public class Movie {
     private  String title, studio, rating, streaming_link;
     private  String description;
 
-    private  int tumbnail;
+    private  String tumbnail;
 
-    public Movie(String title, String studio, String rating, String streaming_link, String description, int tumbnail) {
+    public Movie(String title, String studio, String rating, String streaming_link, String description, String  tumbnail) {
         this.title = title;
         this.studio = studio;
         this.rating = rating;
@@ -16,12 +16,12 @@ public class Movie {
         this.tumbnail = tumbnail;
     }
 
-    public Movie(String title, int tumbnail){
+    public Movie(String title, String tumbnail){
         this.title = title;
         this.tumbnail = tumbnail;
     }
 
-    public Movie(String title, int tumbnail, String streaming_link){
+    public Movie(String title, String tumbnail, String streaming_link){
         this.title = title;
         this.tumbnail = tumbnail;
         this.streaming_link = streaming_link;
@@ -48,7 +48,7 @@ public class Movie {
         this.description = description;
     }
 
-    public void setTumbnail(int tumbnail) {
+    public void setTumbnail(String tumbnail) {
         this.tumbnail = tumbnail;
     }
 
@@ -72,7 +72,7 @@ public class Movie {
         return description;
     }
 
-    public int getTumbnail() {
+    public String  getTumbnail() {
         return tumbnail;
     }
 

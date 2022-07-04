@@ -53,4 +53,12 @@
         android:layout_below="@id/phoneVerify_opt"
         android:layout_toRightOf="@id/phoneVerify_bt" />
 
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/phoneVerify_resent"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/otp"/>
+
 </RelativeLayout>

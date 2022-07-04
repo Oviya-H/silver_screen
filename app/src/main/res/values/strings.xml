@@ -2,4 +2,14 @@
     <string name="app_name">Silver_Screen</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="movie_route">https://dry-meadow-32049.herokuapp.com/api/movies</string>
+    <string name="login_route">http://dry-meadow-32049.herokuapp.com/api/login</string>
+    <string name="user_route">http://dry-meadow-32049.herokuapp.com/api/users</string>
+    <string name="theater_route">https://dry-meadow-32049.herokuapp.com/api/theatres</string>
+    <string name="seattypes">https://dry-meadow-32049.herokuapp.com/api/seattypes</string>
+    <string name="tickets">https://dry-meadow-32049.herokuapp.com/api/tickets</string>
+    <string name="reset">https://dry-meadow-32049.herokuapp.com/api/login/forgot</string>
+
+
+
 </resources>

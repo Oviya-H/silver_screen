@@ -6,22 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".login_page">
 
-    <Button
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:id="@+id/regsiter_google"
-        android:layout_above="@id/login_mail"
-        android:layout_marginLeft="130dp"
-        android:background="@drawable/google"/>
-
-    <Button
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:id="@+id/regsiter_facebook"
-        android:layout_above="@id/login_mail"
-        android:layout_marginLeft="20dp"
-        android:layout_toRightOf="@id/regsiter_google"
-        android:background="@drawable/facebook"/>
+<ImageView
+    android:layout_width="250dp"
+    android:layout_height="200dp"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="20dp"
+    android:background="@drawable/movie_login"/>
 
     <EditText
         android:layout_width="match_parent"

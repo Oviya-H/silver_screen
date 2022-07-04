@@ -49,7 +49,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/setting_tv2"
-        android:text="Location Permission"
+        android:text="Dark Mode"
         android:textSize="20sp"
         android:textColor="@color/black"
         android:layout_alignParentLeft="true"
@@ -67,10 +67,10 @@
         android:layout_marginRight="10dp"
         android:background="@drawable/add_location" />
 
-    <EditText
+    <TextView
         android:layout_width="260dp"
         android:layout_height="wrap_content"
-        android:id="@+id/setting_location_et"
+        android:id="@+id/setting_city_tv"
         android:textSize="20sp"
         android:background="@drawable/editview_design"
         android:padding="10dp"
@@ -81,6 +81,34 @@
         android:layout_marginLeft="30dp"
         android:layout_below="@id/setting_tv2"/>
 
+    <TextView
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/setting_area_tv"
+        android:textSize="20sp"
+        android:background="@drawable/editview_design"
+        android:padding="10dp"
+        android:hint="Click location Button"
+        android:textColor="@color/black"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/setting_city_tv"/>
+
+    <TextView
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/setting_pin_tv"
+        android:textSize="20sp"
+        android:background="@drawable/editview_design"
+        android:padding="10dp"
+        android:hint="Click location Button"
+        android:textColor="@color/black"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/setting_area_tv"/>
+
     <androidx.appcompat.widget.SwitchCompat
         android:id="@+id/setting_location_swithch"
         android:layout_width="wrap_content"
@@ -90,7 +118,7 @@
         android:thumb="@drawable/switch_thumb"
         app:showText="true"
         app:track="@drawable/switch_track"
-        android:layout_below="@id/setting_location_bt"
+        android:layout_below="@id/setting_pin_tv"
         android:layout_alignParentRight="true"
         android:layout_marginTop="50dp"
         android:layout_marginRight="40dp"/>
@@ -112,6 +140,6 @@
         android:layout_alignParentLeft="true"
         android:layout_marginTop="60dp"
         android:layout_marginLeft="30dp"
-        android:layout_below="@id/setting_location_et"/>
+        android:layout_below="@id/setting_pin_tv"/>
 
 </RelativeLayout>

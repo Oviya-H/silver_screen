@@ -1,6 +1,7 @@
 package com.example.silver_screen;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,11 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.squareup.picasso.Picasso;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.URL;
 import java.util.List;
 
 public class latest_list_adapter extends RecyclerView.Adapter<latest_list_adapter.MyViewHolder> {
@@ -34,11 +40,13 @@ public class latest_list_adapter extends RecyclerView.Adapter<latest_list_adapte
 
     @Override
     public void onBindViewHolder(@NonNull latest_list_adapter.MyViewHolder holder, int position) {
-
         holder.tv_title.setText(mData.get(position).getTitle());
-        holder.Imag_movie.setImageResource(mData.get(position).getTumbnail());
 
-
+        try  {
+            Picasso.with(context).load(mData.get(position).getTumbnail()).into(holder.Imag_movie);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
     }
 
